@@ -1,0 +1,2 @@
+# CSS `calc()` Function Unexpected Behavior
+This repository demonstrates an uncommon bug related to the CSS `calc()` function, specifically regarding operator precedence and unit consistency. The bug occurs when percentages are subtracted directly from percentages, or when different units are inconsistently combined without proper consideration of precedence.
