@@ -1,0 +1,3 @@
+To solve this issue, ensure that you're using consistent units within your `calc()` expressions. If you need to subtract a percentage from a percentage, you should explicitly define the base. 
+
+For example, instead of `width: calc(100% - 20%);`, use something like `width: calc(100% - 20vw);` (where `vw` refers to viewport width) or explicitly define the element's dimension as a baseline if it's based on a parent's width and not the viewport.  If you intend to subtract a fixed value from a percentage, use pixels or another absolute unit (e.g., `width: calc(100% - 20px);`).  Also, understand that `calc()` operations are performed left to right unless parentheses dictate otherwise.
